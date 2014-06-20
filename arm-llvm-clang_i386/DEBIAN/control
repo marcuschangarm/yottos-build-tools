@@ -1,0 +1,7 @@
+Package: arm-llvm-clang
+Version: 3.5-1
+Maintainer: Marcus Chang <marcus.chang@arm.com>
+Depends: libc6
+Architecture: i386
+Description: LLVM/Clang compiler with Yottos extensions
+ LLVM/Clang compiler for Yottos. 

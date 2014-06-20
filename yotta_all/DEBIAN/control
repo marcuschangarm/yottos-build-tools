@@ -1,0 +1,9 @@
+Package: yotta
+Version: 1.0-1
+Maintainer: Marcus Chang <marcus.chang@arm.com>
+Depends: python-pip, python-setuptools, python-dev
+Architecture: all
+Description: Yotta package manager for Yottos.
+  Yotta manages packages for Yottos and builds binaries using LLVM/Clang and ARM GCC.
+
+

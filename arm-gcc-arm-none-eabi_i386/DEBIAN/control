@@ -1,0 +1,9 @@
+Package: arm-gcc-arm-none-eabi
+Version: 4.8-1
+Maintainer: Marcus Chang <marcus.chang@arm.com>
+Depends: libc6, libncurses5
+Architecture: i386
+Description: GCC toolchain for embedded ARM processors
+ Repackaged from gcc-arm-none-eabi package to include missing headers and install in /opt.
+ .
+ See https://launchpad.net/gcc-arm-embedded for details on original package.

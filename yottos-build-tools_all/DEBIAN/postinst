@@ -1,0 +1,39 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+if [ -f /usr/share/dbconfig-common/dpkg/postinst.pgsql  ]; then
+  . /usr/share/dbconfig-common/dpkg/postinst.pgsql
+fi
+
+case "$1" in
+
+  configure)
+    echo "********************************************************************************"
+    echo "*                                                                              *"
+    echo "*  Add these environmental variables before using Yotta:                       *"
+    echo "*                                                                              *"
+    echo "*    export ARM_CLANG_PATH=/opt/arm-llvm-clang                                 *"
+    echo "*    export ARM_GCC_PATH=/opt/gcc-arm-none-eabi                                *"
+    echo "*                                                                              *"
+    echo "********************************************************************************"
+  ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+    exit 0
+  ;;
+
+  *)
+    echo "postinst called with unknown argument \`$1'" >&2
+    exit 1
+  ;;
+
+esac
+
+#DEBHELPER#
+
+db_stop
+
+exit 0

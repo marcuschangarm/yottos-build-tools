@@ -1,0 +1,13 @@
+Package: yottos-build-tools
+Version: 1.0-1
+Maintainer: Marcus Chang <marcus.chang@arm.com>
+Depends: cmake (>= 2.8.12), jlink, yotta, arm-llvm-clang, arm-gcc-arm-none-eabi
+Architecture: all
+Description: Meta package for Yottos toolchain
+ Package installs:
+  * yotta
+  * cmake
+  * arm-llvm-clang
+  * arm-gcc-arm-none-eabi
+  * jlink
+
