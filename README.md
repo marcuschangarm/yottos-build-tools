@@ -3,7 +3,7 @@ yottos-build-tools
 
 Templates for building Debian/Ubuntu packages. Each package contains a DEBIAN folder with the following control files:
 ```bash
-control  - Package manifest. Contains architecture (i386/amd64/all), version, dependencies, name, and description.
+control  - Package manifest. Contains architecture (i386/amd64/all), version, dependencies, etc.
 postinst - Script to run after installation.
 postrm   - Script to run after removal. 
 ```
